@@ -16,21 +16,19 @@ def SignupPage(request):
         email = request.POST.get('email')
         pass1 = request.POST.get('password1')
         pass2 = request.POST.get('password2')
-        name = request.POST.get('name')  # استخراج نام
-        age = request.POST.get('age')    # استخراج سن
+        name = request.POST.get('name')
+        age = request.POST.get('age')
 
         if pass1 != pass2:
             return HttpResponse("Your password and confirm password are not the same!")
         else:
-            # بررسی نام کاربری برای جلوگیری از تکرار
             if User.objects.filter(username=uname).exists():
                 return HttpResponse("This username is already taken. Please choose another one.")
             try:
                 my_user = User.objects.create_user(uname, email, pass1)
-                # اینجا می‌توانید اطلاعات اضافی مانند 'name' و 'age' را در پروفایل کاربر ذخیره کنید
                 print('User created:', my_user)
-                print('Name:', name)  # چاپ نام
-                print('Age:', age)    # چاپ سن
+                print('Name:', name)
+                print('Age:', age)  
                 my_user.save()
                 mydb = create_db_connection(DB_HOST, DB_PORT, DB_USER, DB_PASSWORD, DB_NAME)
                 save_user(mydb, name, uname, pass1, email, age)
