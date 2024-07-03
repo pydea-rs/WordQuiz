@@ -29,8 +29,9 @@ python manage.py runserver
 
 You know the rest with your port 8000.
 <hr />
-# Notes:
+<h1> Hear me now </h1>
 <hr />
+
 * This not my project. Its a student project with some forced naming conventions. I was just allowed the group5 app and the database is pre-initialized and shared.<br>
 
 * I couldn't even define models other than the 3 or 4 that was allowed (So the exam part and its result check is all handled in frontend and with js,<br>
