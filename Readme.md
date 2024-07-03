@@ -1,4 +1,9 @@
+# Words Salad Demo
 
+Live demo available @ <a href="https://cat-rare-cupcake.glitch.me/">Words Salad Glitch Demo</a>
+
+but Locally you can:
+<hr />
 First things first, install the requirements:
 
 ```bash
@@ -34,7 +39,4 @@ You know the rest with your port 8000.
 
 * This is just an illustration that you can blockmy way even with such idiotic limitations : )
 
-<hr />
-# Words Salad Demo
-
-Live demo available @ <a href="https://cat-rare-cupcake.glitch.me/">Words Salad Glitch Demo</a>
+Fuck you and have a nice day.
